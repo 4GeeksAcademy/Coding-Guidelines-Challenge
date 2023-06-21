@@ -1,8 +1,8 @@
 import "bootstrap"; // Importing the Bootstrap library
 import "./style.css"; // Importing a CSS file
 
-window.onload = function() {
-  //main function that generates random outputs
+// Main function that generates random outputs
+function generateExcuse() {
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
   let action = ["ate", "peed", "crushed", "broke"];
   let what = ["my homework", "the keys", "the car"];
@@ -24,6 +24,9 @@ window.onload = function() {
   let excuse =
     randomWho + " " + randomAction + " " + randomWhat + " " + randomWhen;
 
-  // Setthe generated excuse as the content of an element with the id "excuse"
+  // Set the generated excuse as the content of an element with the id "excuse"
   document.querySelector("#excuse").innerHTML = excuse;
-};
+}
+
+// Execute the generateExcuse function when the window loads
+window.onload = generateExcuse;
