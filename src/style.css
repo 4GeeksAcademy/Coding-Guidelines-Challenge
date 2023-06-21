@@ -1,1 +1,13 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  margin: 0;
+}
+
+#excuse {
+  text-align: center;
+  font-size: 24px;
+}
