@@ -23,10 +23,11 @@ function generateExcuse() {
   // Create an excuse using the random values
   let excuse =
     randomWho + " " + randomAction + " " + randomWhat + " " + randomWhen;
+  return excuse;
 }
 
 // Execute the generateExcuse function when the window loads
 window.onload = function() {
-  let excuse;
-  generateExcuse();
+  let excuseElement = document.querySelector("#excuse");
+  excuseElement.innerHTML = generateExcuse();
 };
